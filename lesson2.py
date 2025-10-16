@@ -5,8 +5,9 @@ def check_number(n):
     else:
         return "Đây là số lẻ"
 try:
-    number = int(input("Hãy nhập số cần kiểm tra: "))
+    number = int(input("Hãy nhập 1 số nguyên: "))
     result = check_number(number)
     print(result)
 except ValueError:
-    print("Không hợp lệ xin hãy thử lại")
+    print("lỗi")
+
