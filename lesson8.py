@@ -10,6 +10,7 @@ def even_odd_check(numbers):
         return even, odd
 
 
+
 try:
     list = input("Hãy nhập vào danh sách các số nguyên: ")
     numbers = [int(number)for number in list.split()]
