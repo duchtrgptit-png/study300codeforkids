@@ -12,3 +12,4 @@ try:
     print(f'Tổng của {number} là: {result}')
 except ValueError:
     print("Giá trị không hợp lệ vui lòng thử lại")
+    
