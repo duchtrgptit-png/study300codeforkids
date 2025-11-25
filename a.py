@@ -1,10 +1,15 @@
-i=1
-sum=0
-for i in range(1,10):
-    i+=1
-    sum+=i
-    print("sum =",sum)
-    if sum % 2 == 0:
-        print(f"{sum} là số chẵn")
-    else:
-        print(f"{sum} là số lẻ")
+from datetime import datetime
+
+def lay_ngay_gio_hien_tai():
+    """
+    Hàm để lấy ngày và giờ hiện tại.
+    """
+    # Lấy thời gian hiện tại
+    hien_tai = datetime.now()
+
+    # Định dạng ngày và giờ hiện tại
+    ngay_gio_hien_tai = hien_tai.strftime("%Y-%m-%d %H:%M:%S")
+    return ngay_gio_hien_tai
+
+# Gọi hàm và in kết quả
+print("Ngày và giờ hiện tại là:", lay_ngay_gio_hien_tai())
